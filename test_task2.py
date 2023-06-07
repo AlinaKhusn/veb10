@@ -11,7 +11,7 @@ def all_division(*arg1):
 
 @pytest.mark.parametrize('a, b, result', [
             pytest.param(2, 2, 1, marks=pytest.mark.skip('Не проверяем')),
-            pytest.param(10, 5, 2, marks=pytest.mark.smoke)
+            pytest.param(10, 5, 2)
             ],
                          ids=['positive', 'smoke'])
 
